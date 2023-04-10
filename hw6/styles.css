@@ -1,0 +1,111 @@
+ html {
+     height: 100%;
+ }
+
+ body {
+     display: grid;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     background-color: #fff9e3;
+     grid-template-areas:
+         "header header header"
+         "content-header content-header sidebar"
+         " content-1 content-2 sidebar"
+         " content-3 content-3 sidebar"
+         "footer footer footer";
+     grid-template-columns: 10fr 10fr 10fr;
+     grid-template-rows: 2fr 4fr 2fr 2fr 4fr;
+
+ }
+
+ .header {
+     grid-area: header;
+     background-color: #e0e0e0;
+     color: black;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .sidebar {
+     grid-area: sidebar;
+     background-color: #ddeccb;
+     text-align: center;
+ }
+
+ .content-header {
+     grid-area: content-header;
+     text-align: center;
+
+ }
+
+ .content-1 {
+     grid-area: content-1;
+     flex-basis: 49%;
+     text-align: center;
+     background-color: #feeab8;
+     gap: 1em;
+     margin: 10px 15px 15px 15px;
+
+ }
+
+ .content-2 {
+     grid-area: content-2;
+     flex-basis: 49%;
+     text-align: center;
+     background-color: #feeab8;
+     margin: 10px 15px 15px 15px;
+ }
+
+ .content-3 {
+     grid-area: content-3;
+     flex-basis: 49%;
+
+     text-align: center;
+     background-color: #feeab8;
+     margin: 10px 15px 20px 15px;
+
+ }
+
+
+
+ .footer {
+     grid-area: footer;
+     background-color: #e0e0e0;
+     color: black;
+     display: flex;
+     justify-content: space-around;
+     padding: 10px;
+     align-items: center;
+ }
+
+
+ body * {
+     box-sizing: border-box;
+ }
+
+ header {
+     background-color: #e0e0e0;
+     color: black;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+
+
+ .footer-section {
+     flex-basis: 10px;
+     padding: 5em 5em;
+     background-color: #fafafa;
+     text-align: center;
+     align-items: center;
+     color: black;
+     display: flex;
+     justify-content: center;
+     height: 20vh;
+ }
